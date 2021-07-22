@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+			 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			 xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+			 http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd"
+			 version="2.2">
+	<persistence-unit name = "BankApp">
+		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider> 
+		<class>hibernate.model.Category</class>
+		<class>hibernate.model.Topic</class>
+		<properties> 
+			<property name = "javax.persistence.jdbc.driver" value = "org.hsqldb.jdbc.JDBCDriver" />
+			<property name = "javax.persistence.jdbc.url" value = "jdbc:hsqldb:file:db/bankdb" />
+			<property name = "javax.persistence.jdbc.user" value = "sa" />
+			<property name = "javax.persistence.jdbc.password" value = "" />
+		</properties>
+	</persistence-unit>
+</persistence>
