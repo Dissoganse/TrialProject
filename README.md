@@ -1,6 +1,7 @@
 # TrialProject
 
-Trial project with GUI on JavaFX and HSQLDB database. 
+Trial project is an Eclipse project with GUI on JavaFX and HSQLDB database.
+Use with JDK 1.8
 
 Capabilities:
 1. add, edit and delete clients data, loans data, loan offers data in corresponding database tables.
